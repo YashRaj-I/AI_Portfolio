@@ -1,0 +1,262 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("public/public.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #c5bdbd;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+}
+
+nav h1 {
+  color: #00ffcc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+}
+
+.intro-text h2 {
+  margin: 0;
+  color: #00ffcc;
+}
+
+.intro-text a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #00ffcc;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.about-section {
+  background-color: #1f1f1f;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.projects-section {
+  background-color: #0e0e0e;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.projects-section h2 {
+  color: #00ffcc;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffcc55;
+}
+
+.project-card img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-info h3 {
+  color: #00ffcc;
+  margin: 0.5rem 0;
+}
+
+.project-info a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+.skills-section {
+  background-color: #1f1f1f;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.skills-section h2 {
+  color: #00ffcc;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-grid span {
+  background-color: #0e0e0e;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  font-weight: 500;
+}
+.contact-section {
+  background-color: #0e0e0e;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.contact-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  background-color: #00ffcc;
+  color: black;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #00ffcc;
+  color: black;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+#backToTop:hover {
+  background-color: #00d1b0;
+}
+/* --- Light Mode Enhanced --- */
+body.light-mode {
+  background-color: #fefefe;
+  color: #121212;
+}
+
+.light-mode nav {
+  background-color: #ffffff;
+}
+
+.light-mode nav a {
+  color: #121212;
+}
+
+.light-mode h2,
+.light-mode h3 {
+  color: #00bfa5;
+}
+
+.light-mode .hero,
+.light-mode .about-section,
+.light-mode .projects-section,
+.light-mode .skills-section,
+.light-mode .contact-section {
+  background-color: #f9f9f9;
+}
+
+.light-mode .project-card {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: 0 0 10px #00ffcc33;
+}
+
+.light-mode .skills-grid span {
+  background-color: #e0f7f5;
+  color: #00796b;
+  border-color: #00bfa5;
+}
+
+.light-mode .footer {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.light-mode .contact-links a {
+  background-color: #00bfa5;
+  color: white;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* darker overlay */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}

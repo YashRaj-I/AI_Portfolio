@@ -1,0 +1,237 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Raj | AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+  
+</script>
+
+<body>
+  
+  <header>
+    <nav>
+      
+      <button id="modeToggle" title="Toggle Light/Dark Mode">🌙</button>
+      <h1>Yash Raj</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="public/profile.jpg" alt="Yash Raj" class="profile-pic" />
+    <div class="intro-text">
+      <h2 id="typedText"></h2>
+      <p>An aspiring AI Engineer turning ideas into intelligent systems.</p>
+      <a href="public/resume.pdf" download>📄 Download Resume</a>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>
+    I'm Yash Raj, a passionate AI Engineer skilled in Python, NumPy, Pandas, Computer Vision, and Machine Learning.
+    I love solving real-world problems by building intelligent systems that can see, think, and learn.
+  </p>
+  <p>
+    My journey began with curiosity, and now I build projects that combine logic, creativity, and technology.
+    I'm always excited to learn new tools and contribute to impactful innovations in AI/ML.
+  </p>
+<section id="projects" class="projects-section">
+  <h2>Projects</h2>
+
+  <!-- First 4 Projects -->
+  <div class="project-card">
+    <img src="public/project1.jpg" alt="Project 1">
+    <div class="project-info">
+      <h3>Banglore House Price Predictor</h3>
+      <p>A machine learning web app that predicts house prices based on location, size, bedrooms, and bathrooms.</p>
+      <a href="https://github.com/YashRaj-I/Banglore_house_price_predicting/blob/master/app.py" target="_blank">🔗 GitHub Repo</a>
+      <a href="https://youtu.be/eKInUhnkb9g?si=gWtXs_bsLR8vmCFs">🔗 YouTube Demo Video</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="public/project2.jpg" alt="Project 2">
+    <div class="project-info">
+      <h3>Gesture-Controlled Subway Surfer✋</h3>
+      <p>Play Subway Surfer using hand gestures via MediaPipe in Python – swipe, jump and interact naturally!</p>
+      <a href="https://github.com/YashRaj-I/Gesture-Controlled/blob/master/subaysuffer.py" target="_blank">🔗 GitHub Repo</a>
+      <a href="https://youtu.be/utZ_X0nITZk?si=G-Tr6wGLeU4nNQDE">🔗 YouTube Demo Video</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="public/project3.jpg" alt="Project 3">
+    <div class="project-info">
+      <h3>Invisibility Cloak 🧥</h3>
+      <p>OpenCV + Python magic! Become invisible with background subtraction and color masking.</p>
+      <a href="https://github.com/YashRaj-I/Invisible_cloak/blob/master/inv.py" target="_blank">🔗 GitHub Repo</a>
+      <a href="https://youtu.be/UlIFqQ5HR-E?si=9ADzwjivBAYiycCV">🔗 YouTube Demo Video</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="public/project4.jpg" alt="Project 4">
+    <div class="project-info">
+      <h3>Voice Assistant</h3>
+      <p>A Python voice assistant that opens YouTube, Google, and plays music through voice commands.</p>
+      <a href="https://github.com/YashRaj-I/voice-assistant/blob/main/main.py" target="_blank">🔗 GitHub Repo</a>
+      <a href="https://youtu.be/vhCaK0TIvnc?si=LuzihThANbmhPX2f">🔗 YouTube Demo Video</a>
+    </div>
+  </div>
+
+  <!-- Hidden Projects -->
+  <div id="moreProjects" style="display: none;">
+    <div class="project-card">
+      <img src="public/project5.jpg" alt="Project 5">
+      <div class="project-info">
+        <h3>Glowing Pose Tracker</h3>
+        <p>Real-time pose tracking with glowing visual effects using MediaPipe and OpenCV.</p>
+        <a href="https://github.com/YashRaj-I/Gesture_control_games/blob/master/light_dance.py" target="_blank">🔗 GitHub Repo</a>
+        <a href="https://youtu.be/NKTkbZfVPiI?si=1OTC2xi3oHyY-DIb">🔗 YouTube Demo Video</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="public/project6.jpg" alt="Project 6">
+      <div class="project-info">
+        <h3>Cyberpunk Visualizer</h3>
+        <p>Neon-style real-time visualizer with glowing effects and adaptive color shifts using OpenCV.</p>
+        <a href="https://github.com/YashRaj-I/Cyberpunk/blob/master/dancePunk.py" target="_blank">🔗 GitHub Repo</a>
+        <a href="https://youtu.be/emX71nJc01Y?si=aOL3aFEzonmC4SoG">🔗 YouTube Demo Video</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="public/project7.jpg" alt="Project 7">
+      <div class="project-info">
+        <h3>Hand-Controlled Volume Adjuster</h3>
+        <p>Use hand gestures to change system volume in real-time using MediaPipe.</p>
+        <a href="https://github.com/YashRaj-I/COMPUTER-VISION-PROJECTS/blob/master/volume_control.py" target="_blank">🔗 GitHub Repo</a>
+        <a href="https://youtu.be/0-sda6z10Fw?si=IByOs9LTdchAKJbi">🔗 YouTube Demo Video</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="public/project8.jpg" alt="Project 8">
+      <div class="project-info">
+        <h3>Virtual Mouse</h3>
+        <p>Control your PC mouse using hand gestures – move, click, scroll – via OpenCV + MediaPipe.</p>
+        <a href="https://github.com/YashRaj-I/COMPUTER-VISION-PROJECTS/blob/master/AIvirtualMOUSE.py" target="_blank">🔗 GitHub Repo</a>
+        <a href="https://youtu.be/vhCaK0TIvnc?si=LuzihThANbmhPX2f">🔗 YouTube Demo Video</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toggle Button -->
+  <button id="toggleProjects">View More ⬇️</button>
+</section>
+
+  
+  
+</section>
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Python</span>
+    <span>NumPy</span>
+    <span>Pandas</span>
+    <span>OpenCV</span>
+    <span>TensorFlow</span>
+    <span>MediaPipe</span>
+    <span>Matplotlib</span>
+    <span>Scikit-learn</span>
+    <span>Data Visualization</span>
+    <span>Machine Learning</span>
+    <span>Deep Learning</span>
+    <span>Computer Vision</span>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Have a project in mind or want to connect? Reach out 👇</p>
+  <div class="contact-links">
+    <a href="mailto:yr7971556@gmail.com" target="_blank">📧 Email</a>
+    <a href="https://www.linkedin.com/in/yashrajb" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/YashRaj-I" target="_blank">🐱 GitHub</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Yash Raj. Built with ❤️ using HTML CSS & JS.</p>
+</footer>
+<script>
+  // Back to top button
+  const topBtn = document.getElementById("backToTop");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+
+  topBtn.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+</script>
+<script>
+  // Typing animation effect
+  const text = "Hi, I'm Yash Raj 👋";
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typedText").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 70);
+    }
+  }
+
+  window.onload = function () {
+    typeWriter();
+  };
+</script>
+<button id="backToTop" title="Go to top">↑</button>
+<script>
+  // Dark/Light Mode Toggle
+  const toggleBtn = document.getElementById("modeToggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+  });
+</script>
+<script>
+  // Toggle View More Projects
+  const toggleProjectsBtn = document.getElementById("toggleProjects");
+  const moreProjects = document.getElementById("moreProjects");
+  let isExpanded = false;
+
+  toggleProjectsBtn.addEventListener("click", () => {
+    isExpanded = !isExpanded;
+    moreProjects.style.display = isExpanded ? "block" : "none";
+    toggleProjectsBtn.textContent = isExpanded ? "View Less ⬆️" : "View More ⬇️";
+  });
+</script>
+
+
+</body>
+</html>
